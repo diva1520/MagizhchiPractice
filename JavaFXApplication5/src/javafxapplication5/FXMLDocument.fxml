@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="616.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication5.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="103.0" layoutY="241.0" onAction="#handleButtonAction" text="submmit" />
+      <TextField fx:id="txtNAme" layoutX="58.0" layoutY="106.0" />
+      <TextField fx:id="txtPass" layoutX="58.0" layoutY="166.0" />
+      <TableView fx:id="tbDetail" layoutX="325.0" layoutY="92.0" prefHeight="355.0" prefWidth="581.0">
+        <columns>
+          <TableColumn fx:id="clName" prefWidth="149.0" text="Name" >
+              <cellValueFactory>
+                  <javafx.scene.control.cell.PropertyValueFactory property="name"/> 
+              </cellValueFactory>
+              </TableColumn>   
+          <TableColumn fx:id="clAge" prefWidth="99.0" text="age" >
+              <cellValueFactory>
+                  <javafx.scene.control.cell.PropertyValueFactory property="age"/> 
+              </cellValueFactory>
+             </TableColumn>   
+            <TableColumn fx:id="clArea" prefWidth="98.0" text="area"  >
+              <cellValueFactory>
+                  <javafx.scene.control.cell.PropertyValueFactory property="area"/> 
+              </cellValueFactory>
+              </TableColumn>   
+            <TableColumn fx:id="clID" prefWidth="83.0" text="ID"  >
+              <cellValueFactory>
+                  <javafx.scene.control.cell.PropertyValueFactory property="id"/> 
+              </cellValueFactory>
+              </TableColumn>   
+            <TableColumn fx:id="clPhone" prefWidth="151.0" text="phno"  >
+              <cellValueFactory>
+                  <javafx.scene.control.cell.PropertyValueFactory property="phno"/> 
+              </cellValueFactory>
+              </TableColumn>   
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>

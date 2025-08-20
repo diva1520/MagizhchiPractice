@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JD18.jnlp">
+  <information>
+    <title>JD18</title>
+    <vendor>thivagar</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="JD18.jar" size="1512477" download="eager" />
+    <jar href="lib/postgresql-42.7.7.jar" size="1098916" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="JD18" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="jd18.JD18"  name="JD18" />
+  <update check="always"/>
+</jnlp>
